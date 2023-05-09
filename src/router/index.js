@@ -1,13 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Header from '../components/common/Header.vue'
+import Profile from '../components/youtube/Profile.vue'
+import Videos from '../components/youtube/videos.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'Header',
-      component: Header
-    }
+      name: 'videos',
+      component: Videos
+    },
+    {
+      path: '/profile',
+      name: 'profile',
+      component: Profile
+    },
   ]
 })
 
