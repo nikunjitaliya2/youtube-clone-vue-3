@@ -18,7 +18,6 @@ const minimize = () => {
     inputWidth.value = '100%'
   }
 }
-
 </script>
 <template>
   <div>
@@ -121,11 +120,11 @@ const minimize = () => {
           </q-list>
         </q-scroll-area>
       </q-drawer>
-<!--            <q-page-container>-->
-<!--              <q-page padding>-->
-<!--                <RouterView/>-->
-<!--              </q-page>-->
-<!--            </q-page-container>-->
+      <!--            <q-page-container>-->
+      <!--              <q-page padding>-->
+      <!--                <RouterView/>-->
+      <!--              </q-page>-->
+      <!--            </q-page-container>-->
     </q-layout>
   </div>
   <RouterView />

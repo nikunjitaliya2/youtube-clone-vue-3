@@ -1,9 +1,7 @@
-<script setup>
-
-</script>
+<script setup></script>
 <template>
   <q-layout>
-  <h1>this is playlist page</h1>
+    <h1>this is playlist page</h1>
     <!-- this is where the Pages are injected -->
     <q-page-container>
       <router-view></router-view>
