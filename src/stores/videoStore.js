@@ -14,5 +14,5 @@ export const useVideoStore = defineStore('videosStore', () => {
     localStorage.setItem('playlist', JSON.stringify(videos.value))
   }
 
-  return { videos,savedVideos, playListInLocalStorage}
+  return { videos, savedVideos, playListInLocalStorage }
 })

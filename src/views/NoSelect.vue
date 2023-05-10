@@ -1,9 +1,5 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
-  <h3>
-    NO VIDEOS ARE UPLOADED
-  </h3>
+  <h3>NO VIDEOS ARE UPLOADED</h3>
 </template>

@@ -1,13 +1,7 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
-  <h5>
-    This is Playlist Page
-  </h5>
+  <h5>This is Playlist Page</h5>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

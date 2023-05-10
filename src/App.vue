@@ -1,10 +1,3 @@
-<!--<script setup>-->
-<!--import Header from './components/common/Header.vue'-->
-<!--</script>-->
-
-<!--<template>-->
-<!--  <Header />-->
-<!--</template>-->
 <script setup>
 const drawer = ref(false)
 const miniState = ref(true)
@@ -12,30 +5,29 @@ import { RouterLink, RouterView } from 'vue-router'
 import { ref } from 'vue'
 
 const search = ref('')
-let inputWidth = ref('60%')
+let inputWidth = ref('40%')
 const expandInput = () => {
-  inputWidth.value = '80%'
+  inputWidth.value = '50%'
 }
 const minimize = () => {
   let screenWidth = window.screen.width
   if (screenWidth > 900) {
-    inputWidth.value = '60%'
+    inputWidth.value = '40%'
   } else {
-    inputWidth.value = '100%'
+    inputWidth.value = '65%'
   }
 }
 </script>
 <template>
-  <div class=''>
-    <q-layout  view="lHh lpr lFf" style="min-height: 0">
+  <div class="">
+    <q-layout view="lHh lpr lFf" style="min-height: 0">
       <q-header>
-        <q-toolbar class="shadow-2 bg-white text-black">
-          <q-btn flat round dense icon="menu" class="q-mr-sm" @click="drawer = !drawer" />
+        <q-toolbar class="shadow-2 bg-white text-black justify-between">
           <div class="cursor-pointer flex items-center">
+          <q-btn flat round dense icon="menu" class="q-mr-sm" @click="drawer = !drawer" />
             <q-icon name="smart_display" class="text-2xl text-red hide-logo" size="28px" />
             <q-toolbar-title shrink class="text-weight-bold text-red"> YouTube</q-toolbar-title>
           </div>
-          <div class="flex w-[40%] mx-auto justify-center">
             <q-input
               dense
               outlined
@@ -55,16 +47,17 @@ const minimize = () => {
                 <q-icon name="search" />
               </template>
             </q-input>
-          </div>
-          <q-btn class='hide-logo' round flat icon="video_call" />
-          <q-btn class='hide-logo' round flat icon="notifications" />
-          <q-btn class='hide-logo' round flat>
-            <q-avatar flat>
-              <q-img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJyMDqdXgH0WbYqeCVArdRHZO-5_GCETLk1w&usqp=CAU"
-              />
-            </q-avatar>
-          </q-btn>
+            <div class='hide-logo'>
+              <q-btn round flat icon="video_call" />
+              <q-btn round flat icon="notifications" />
+              <q-btn round flat>
+                <q-avatar flat>
+                  <q-img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJyMDqdXgH0WbYqeCVArdRHZO-5_GCETLk1w&usqp=CAU"
+                  />
+                </q-avatar>
+              </q-btn>
+            </div>
         </q-toolbar>
       </q-header>
       <q-drawer
@@ -87,7 +80,7 @@ const minimize = () => {
               <q-item-section> Home</q-item-section>
             </q-item>
 
-            <q-item clickable v-ripple to='/subscribe'>
+            <q-item clickable v-ripple to="/subscribe">
               <q-item-section avatar>
                 <q-icon name="subscriptions" />
               </q-item-section>
@@ -95,7 +88,7 @@ const minimize = () => {
               <q-item-section> Subscribe</q-item-section>
             </q-item>
 
-            <q-item clickable v-ripple to='/favorite'>
+            <q-item clickable v-ripple to="/favorite">
               <q-item-section avatar>
                 <q-icon name="favorite" />
               </q-item-section>
@@ -105,13 +98,13 @@ const minimize = () => {
 
             <q-separator />
 
-            <q-item clickable v-ripple to='/playlists'>
+            <q-item clickable v-ripple to="/playlists">
               <q-item-section avatar>
                 <q-icon name="playlist_add" />
               </q-item-section>
               <q-item-section> Play-List</q-item-section>
             </q-item>
-            <q-item clickable v-ripple>
+            <q-item clickable v-ripple to='/upload'>
               <q-item-section avatar>
                 <q-icon name="cloud_upload" />
               </q-item-section>
@@ -136,8 +129,6 @@ const minimize = () => {
 </template>
 
 <style>
-
-
 .q-field__native {
   transition: width 0.5s;
 }

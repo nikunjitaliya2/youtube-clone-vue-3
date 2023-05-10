@@ -11,12 +11,13 @@ const expandInput = () => {
   inputWidth.value = '80%'
 }
 const minimize = () => {
-  let screenWidth = window.screen.width
-  if (screenWidth > 900) {
-    inputWidth.value = '60%'
-  } else {
-    inputWidth.value = '100%'
-  }
+  // let screenWidth = window.screen.width
+  // if (screenWidth > 900) {
+  //   inputWidth.value = '60%'
+  // } else {
+  //   inputWidth.value = '60%'
+  // }
+  inputWidth.value = '60%'
 }
 </script>
 <template>

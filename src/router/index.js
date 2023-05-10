@@ -39,9 +39,15 @@ const router = createRouter({
       component: () => import('../components/youtube/PlayList.vue')
     },
     {
+      path: '/upload',
+      name: 'upload',
+      component: () => import('../components/youtube/Upload.vue')
+    },
+    {
       path: '/profile',
       component: () => import('../components/youtube/Profile.vue'),
       children: [
+        //when no path getted this component are appear
         // {
         //   path: '',
         //   component: NoSelect
@@ -59,6 +65,11 @@ const router = createRouter({
           component: () => import('../components/featured/PlayLists.vue')
         }
       ]
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      component: () => import('../views/NotFound.vue')
     }
   ]
 })

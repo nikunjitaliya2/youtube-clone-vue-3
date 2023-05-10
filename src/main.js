@@ -16,8 +16,10 @@ app.use(Quasar, {
   plugins: {
     Notify
   },
-  config : {
-    notify: { /* look at QuasarConfOptions from the API card */ }
+  config: {
+    notify: {
+      /* look at QuasarConfOptions from the API card */
+    }
   } // import Quasar plugins and add here
 })
 
