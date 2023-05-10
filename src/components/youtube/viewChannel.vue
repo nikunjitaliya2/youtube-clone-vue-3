@@ -1,9 +1,6 @@
 <script setup>
 
 </script>
-
 <template>
-    <h5>
-      This is Channel Page
-    </h5>
+  <h3>ABC CHANNEL</h3>
 </template>

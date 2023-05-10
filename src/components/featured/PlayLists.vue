@@ -4,6 +4,10 @@
 
 <template>
   <h5>
-    this is Playlist page
+    This is Playlist Page
   </h5>
 </template>
+
+<style scoped>
+
+</style>

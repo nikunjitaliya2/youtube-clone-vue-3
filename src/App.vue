@@ -87,7 +87,7 @@ const minimize = () => {
               <q-item-section> Home</q-item-section>
             </q-item>
 
-            <q-item clickable v-ripple >
+            <q-item clickable v-ripple to='/subscribe'>
               <q-item-section avatar>
                 <q-icon name="subscriptions" />
               </q-item-section>
@@ -105,7 +105,7 @@ const minimize = () => {
 
             <q-separator />
 
-            <q-item clickable v-ripple>
+            <q-item clickable v-ripple to='/playlists'>
               <q-item-section avatar>
                 <q-icon name="playlist_add" />
               </q-item-section>

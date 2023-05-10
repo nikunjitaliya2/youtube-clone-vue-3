@@ -19,9 +19,24 @@ const router = createRouter({
       component: () => import('../components/featured/Channels.vue')
     },
     {
+      path: '/subscribe',
+      name: 'subscribe',
+      component: () => import('../components/youtube/subscribers.vue')
+    },
+    {
+      path: '/viewchannel',
+      name: 'viewchannel',
+      component: () => import('../components/youtube/viewchannel.vue')
+    },
+    {
       path: '/favorite',
       name: 'favorite',
       component: () => import('../components/youtube/favorite.vue')
+    },
+    {
+      path: '/playlists',
+      name: 'playlist',
+      component: () => import('../components/youtube/PlayList.vue')
     },
     {
       path: '/profile',

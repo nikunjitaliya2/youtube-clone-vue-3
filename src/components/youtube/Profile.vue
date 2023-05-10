@@ -31,11 +31,11 @@ const splitterModel = ref(20)
           </p>
         </div>
         <div class='flex gap-3'>
-          <q-btn  size='12px' rounded color='white' text-color="black" label='Customize channel'>
-            <q-tooltip>Customize channel</q-tooltip>
+          <q-btn size='12px' rounded color='white' text-color="black" label='Customize channel'>
+            <q-tooltip >Customize channel</q-tooltip>
           </q-btn>
           <q-btn size='12px' rounded color='white' text-color="black" padding='xs lg' label='Manage videos'>
-            <q-tooltip>Manage videos</q-tooltip>
+            <q-tooltip >Manage videos</q-tooltip>
           </q-btn>
         </div>
       </div>
